@@ -1,0 +1,48 @@
+{
+    "meta": {
+        "lastTouchedVersion": "2026.1.24-3",
+        "lastTouchedAt": "2026-02-01T03:17:10.806Z"
+    },
+    "auth": {
+        "profiles": {
+            "gemini-main": {
+                "provider": "google",
+                "mode": "api_key"
+            },
+            "ollama-local": {
+                "provider": "ollama",
+                "mode": "api_key"
+            },
+            "openai-codex:default": {
+                "provider": "openai-codex",
+                "mode": "oauth"
+            }
+        }
+    },
+    "channels": {
+        "telegram": {
+            "enabled": true,
+            "botToken": "REDACTED_BOT_TOKEN"
+        }
+    },
+    "gateway": {
+        "port": 18789,
+        "auth": {
+            "mode": "token",
+            "token": "REDACTED_ACCESS_TOKEN"
+        }
+    },
+    "skills": {
+        "entries": {
+            "coding-agent": {
+                "enabled": true
+            },
+            "terminal": {
+                "enabled": true
+            },
+            "file-system": {
+                "enabled": true
+            }
+        }
+    }
+}
